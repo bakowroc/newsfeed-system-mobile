@@ -1,0 +1,12 @@
+<header class="main-navigate-label">
+    <span class="navigate-toggle" (click) = 'navigateToggle = !navigateToggle'>
+        <ion-icon name="menu"></ion-icon>
+    </span>
+    <nav class="navigate-toggle-body" *ngIf = 'navigateToggle'>
+        <ul>
+            <li><a href='#'>Trending</a></li>
+            <li><a href='#'>About</a></li>
+            <li class="sign-in"><a href='#'>Sign in</a></li>
+        </ul>
+    </nav>
+</header>

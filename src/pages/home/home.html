@@ -1,14 +1,9 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+<navigate></navigate>    
+<div class="news-box" *ngFor="let item of news">
+    <img src="http://127.0.0.1:8000/static/assets/news/{{item.id}}.png">
+    <h1 class="title">{{item.title}}</h1>
+    <article class="content">
+        {{item.desc}}
+    </article>
+    <a class="button">Read more</a>
+</div>

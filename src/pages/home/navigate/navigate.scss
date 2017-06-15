@@ -1,0 +1,43 @@
+navigate{
+    .main-navigate-label{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right :0;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 10px;
+        float: left;
+        background: #2f313e;
+        .navigate-toggle{
+            float: right;
+            color: #fff;
+            font-size: 24px;
+        }
+        .navigate-toggle-body{
+            position: fixed;
+            float: left;
+            top: 50px;
+            left: 0;
+            right: 0;
+            background: #5EAFF2;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    a{
+                        text-decoration: none;
+                        padding: 15px;
+                        color: white;
+                        float: left;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
