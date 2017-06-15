@@ -1,12 +1,39 @@
 <header class="main-navigate-label">
+    <span class="home-icon" (click) = 'navigateTo("home")'>
+        <ion-icon name="home"></ion-icon>
+    </span>
     <span class="navigate-toggle" (click) = 'navigateToggle = !navigateToggle'>
         <ion-icon name="menu"></ion-icon>
     </span>
-    <nav class="navigate-toggle-body" *ngIf = 'navigateToggle'>
+    <nav class="navigate-toggle-body" [ngClass]= '!navigateToggle ? "active" : "not-active"'>
+        <ul class="usercp-section">
+            <li class="button-nav" (click) = 'navigateTo("login")' *ngIf = '!current_user'>Sign in</li>
+            <li class="button-nav" (click) = 'navigateTo("register")' *ngIf = '!current_user'>Register</li>
+            <li class="username" *ngIf = 'current_user'>
+                {{current_user.username}}
+            </li>
+
+            <li class="simply-nav cog" (click) = 'navigateTo("usercp")'  *ngIf = 'current_user'>
+                <ion-icon ios="ios-settings" md="md-settings"></ion-icon> Settings
+            </li>
+            <li class="simply-nav" (click) = 'logout()' *ngIf = 'current_user'>
+                <ion-icon ios="ios-exit" md="md-exit"></ion-icon> Logout
+            </li>
+        </ul>
         <ul>
-            <li><a href='#'>Trending</a></li>
-            <li><a href='#'>About</a></li>
-            <li class="sign-in"><a href='#'>Sign in</a></li>
+            <label>Navigation</label>
+            <li class="simply-nav" (click) = 'navigateTo("home")'>
+                Home
+            </li>
+            <li class="simply-nav" (click) = 'navigateTo("home")'>
+                Trending
+            </li>
+            <li class="simply-nav" (click) = 'navigateTo("home")'>
+                Rules
+            </li>
+            <li class="simply-nav" (click) = 'navigateTo("home")'>
+                About
+            </li>
         </ul>
     </nav>
 </header>

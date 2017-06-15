@@ -1,0 +1,27 @@
+<navigate [current_user] = 'current_user' ></navigate>
+<div class="news-box" *ngIf = 'news'>
+    <h1 class="title">{{news.title}}</h1>
+    <span class="tag">{{news.tag.name}}</span>
+    <span class="date">{{news.date | date : 'shortDate'}}</span>
+    <span class="author">{{news.author.username}}</span>
+    <article class="content">
+        {{news.desc}}
+    </article>
+
+    <div class="comments">
+        <h2 class="sec-title">{{news.comments.length}} Comments</h2>
+        <div class='add-comment' *ngIf = 'current_user'>
+            <form (ngSubmit)="addComment()">
+                <textarea  [(ngModel)]="comment_body.content" name="conent" placeholder='Enter your comment here'></textarea>
+                <input type="submit" value="Add">
+              </form>
+        </div>
+        <div class="comment-box" *ngFor = 'let comment of reverseArray(news.comments)'>
+            <span class="author">{{comment.author.username}}</span>
+            <span class="date">{{comment.date | date: 'HH:mm  MMM d, y'}}</span>
+            <div class="content">
+                {{comment.content}}
+            </div>
+        </div>
+    </div>
+</div>

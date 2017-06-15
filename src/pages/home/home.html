@@ -1,9 +1,10 @@
-<navigate></navigate>    
+<navigate [current_user] = 'current_user'></navigate>
 <div class="news-box" *ngFor="let item of news">
-    <img src="http://127.0.0.1:8000/static/assets/news/{{item.id}}.png">
     <h1 class="title">{{item.title}}</h1>
+    <span class="tag">{{item.tag.name}}</span>
+    <span class="date">{{item.date | date : 'shortDate'}}</span>
     <article class="content">
         {{item.desc}}
     </article>
-    <a class="button">Read more</a>
+    <a class="button-link" (click) = "navigateToDetail(item.id)">Read more</a>
 </div>

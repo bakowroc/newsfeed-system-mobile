@@ -1,0 +1,18 @@
+<navigate></navigate>
+<form (ngSubmit)="registerForm()">
+
+    <label>E-mail</label>
+    <input type="email" [(ngModel)]="register.email" name="email" placeholder = "First here">
+
+    <label>Username</label>
+    <input type="text" [(ngModel)]="register.username" name="username" placeholder = "Then here">
+
+    <label>Password</label>
+    <input type="password" [(ngModel)]="register.password" name="password" placeholder = "And here">
+
+    <label>Re-type password</label>
+    <input type="password" [(ngModel)]="register.re_password" name="re_password" placeholder = "Confirm here">
+
+    <input type="submit" value="Register">
+    <a (click) = 'navigateToLogin()' class = 'button-href'>Already have an account?</a>
+  </form>

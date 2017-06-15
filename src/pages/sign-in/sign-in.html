@@ -1,0 +1,11 @@
+<navigate></navigate>
+<form (ngSubmit)="logForm()">
+
+    <label>Username</label>
+    <input type="text" [(ngModel)]="login.username" name="username" placeholder = "Type here">
+
+    <label>Password</label>
+    <input type="password" [(ngModel)]="login.password" name="password" placeholder = "And here">
+    <input type="submit" value="Login">
+    <a (click) = 'navigateToRegister()' class = 'button-href'>Don't have an account?</a>
+  </form>

@@ -1,0 +1,54 @@
+register{
+    padding: 15px;
+    padding-top: 65px;
+    background: #50c878;
+    .login-title{
+        color: #fff;
+        margin: 10px 0;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    form{
+        label, input{
+            width: 100%;
+            float: left;
+            color: #fff;
+            background: none;
+            border: 0;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        input{
+            padding: 10px 0;
+            border-bottom: 2px solid rgba(black, 0.05);
+            margin-bottom: 30px;
+            font-size: 18px;
+
+            text-transform: none;
+            &::placeholder{
+                color: rgba(black, 0.2);
+
+            }
+            &:focus{
+                outline: none;
+                border-color: rgba(black, 0.1);
+                padding-left: 10px;
+            }
+            &[type=submit]{
+                background: white;
+                border: 0;
+                border-radius: 2px;
+                font-size: 14px;
+                color: #50c878;
+            }
+        }
+        .button-href{
+            float: left;
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            font-weight: 500;
+        }
+    }
+}

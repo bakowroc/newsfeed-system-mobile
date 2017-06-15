@@ -9,32 +9,85 @@ navigate{
         padding: 10px;
         float: left;
         background: #2f313e;
-        .navigate-toggle{
+        .navigate-toggle,.home-icon{
             float: right;
             color: #fff;
             font-size: 24px;
         }
-        .navigate-toggle-body{
+        .home-icon{
+            float: left;
+            padding-top: 6.5px;
+            height: 30px;
+            width: 30px;
+            background: rgba(white, 0.10);
+            text-align: center;
+            border-radius: 100%;
+            font-size: 13px;
+        }
+        .navigate-toggle-body, {
             position: fixed;
             float: left;
             top: 50px;
-            left: 0;
+            left: 50px;
             right: 0;
-            background: #5EAFF2;
+            background: darken(#5EAFF2, 10%);
             height: 100%;
-            width: 100%;
             box-sizing: border-box;
+            &.active{
+                transform: translateX(100%);
+            }
             ul{
                 list-style-type: none;
                 margin: 0;
-                padding: 0;
+                padding: 15px;
+                float: left;
+                width: 100%;
                 li{
-                    a{
-                        text-decoration: none;
-                        padding: 15px;
-                        color: white;
+                    text-decoration: none;
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 100%;
+                    &.simply-nav{
+                        ion-icon{
+                            position: relative;
+                            top: 1px;
+                            margin-right: 10px;
+                        }
+                        color: #fff;
+                        font-size: 12px;
+                        font-weight: 600;
+                        padding-bottom: 7px;
+                        margin-left: 20px;
+                    }
+                }
+                label{
+                    float: left;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                    color: rgba(black, 0.2);
+                }
+                &.usercp-section{
+                    background: darken(#5EAFF2, 10%);
+                    color: #fff;
+                    li.button-nav{
+                        background: white;
+                        padding: 7px;
+                        width: auto;
+                        border-radius: 2px;
+                        color: #5EAFF2;
+                        text-align: center;
+                        margin-right: 10px;
+                        margin-bottom: 0;
+                    }
+                    li.username{
                         float: left;
                         width: 100%;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        margin-bottom: 30px;
+                        color: rgba(black, 0.2);
                     }
                 }
             }
