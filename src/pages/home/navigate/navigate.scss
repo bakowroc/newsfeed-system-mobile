@@ -4,32 +4,33 @@ navigate{
         top: 0;
         left: 0;
         right :0;
-        height: 50px;
+        height: 70px;
         box-sizing: border-box;
-        padding: 10px;
+        padding: 20px;
         float: left;
         background: #2f313e;
         .navigate-toggle,.home-icon{
             float: right;
             color: #fff;
-            font-size: 24px;
+            font-size: 28px;
         }
         .home-icon{
             float: left;
-            padding-top: 6.5px;
-            height: 30px;
-            width: 30px;
+            padding-top: 7px;
+            height: 35px;
+            width: 35px;
             background: rgba(white, 0.10);
             text-align: center;
             border-radius: 100%;
-            font-size: 13px;
+            font-size: 15px;
         }
         .navigate-toggle-body, {
             position: fixed;
             float: left;
-            top: 50px;
-            left: 50px;
+            top: 70px;
+            left: 0;
             right: 0;
+            bottom: 0;
             background: darken(#5EAFF2, 10%);
             height: 100%;
             box-sizing: border-box;
@@ -39,7 +40,7 @@ navigate{
             ul{
                 list-style-type: none;
                 margin: 0;
-                padding: 15px;
+                padding: 20px;
                 float: left;
                 width: 100%;
                 li{
@@ -51,10 +52,10 @@ navigate{
                         ion-icon{
                             position: relative;
                             top: 1px;
-                            margin-right: 10px;
+                            margin-right: 16px;
                         }
                         color: #fff;
-                        font-size: 12px;
+                        font-size: 16px;
                         font-weight: 600;
                         padding-bottom: 7px;
                         margin-left: 20px;
@@ -67,19 +68,26 @@ navigate{
                     font-weight: 600;
                     margin-bottom: 30px;
                     color: rgba(black, 0.2);
+                    font-size: 20px;
                 }
                 &.usercp-section{
                     background: darken(#5EAFF2, 10%);
                     color: #fff;
                     li.button-nav{
                         background: white;
-                        padding: 7px;
-                        width: auto;
+                        padding: 15px;
+                        width: 100%;
                         border-radius: 2px;
                         color: #5EAFF2;
                         text-align: center;
-                        margin-right: 10px;
-                        margin-bottom: 0;
+                        margin-bottom: 15px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        &.no-body{
+                            color: #fff;
+                            background: none;
+                            padding: 10px;
+                        }
                     }
                     li.username{
                         float: left;
@@ -88,6 +96,7 @@ navigate{
                         font-weight: 600;
                         margin-bottom: 30px;
                         color: rgba(black, 0.2);
+                        font-size: 18px;
                     }
                 }
             }

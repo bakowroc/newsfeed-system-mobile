@@ -24,7 +24,7 @@ export class RegisterPage implements OnInit {
 
     registerForm() {
 
-        if(this.register['password'] == this.register['re_password'] && this.register['password'] !== null){
+        if(this.register['password'] == this.register['re_password'] && this.register['password'] != null){
 
             let register_body_object = {
                 email: this.register['email'],

@@ -1,7 +1,8 @@
 register{
     padding: 15px;
-    padding-top: 65px;
-    background: #50c878;
+    padding-top: 85px;
+    background:#50c878;
+    overflow: auto;
     .login-title{
         color: #fff;
         margin: 10px 0;
@@ -15,16 +16,17 @@ register{
             color: #fff;
             background: none;
             border: 0;
-            font-weight: 400;
+            font-weight: 500;
             text-transform: uppercase;
+            font-size: 18px;
         }
         input{
             padding: 10px 0;
             border-bottom: 2px solid rgba(black, 0.05);
-            margin-bottom: 30px;
-            font-size: 18px;
-
+            margin-bottom: 40px;
+            font-size: 20px;
             text-transform: none;
+            font-size: 400;
             &::placeholder{
                 color: rgba(black, 0.2);
 
@@ -38,8 +40,9 @@ register{
                 background: white;
                 border: 0;
                 border-radius: 2px;
-                font-size: 14px;
+                font-size: 18px;
                 color: #50c878;
+                padding: 15px;
             }
         }
         .button-href{
@@ -49,6 +52,7 @@ register{
             color: white;
             padding: 10px;
             font-weight: 500;
+            font-size: 18px;
         }
     }
 }

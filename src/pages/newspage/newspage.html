@@ -7,7 +7,16 @@
     <article class="content">
         {{news.desc}}
     </article>
+    <div class="news-management">
+        <div class="ratings">
 
+        </div>
+        <div class="save-offline">
+            <span (click) = 'saveForOffline(news)'>
+                <ion-icon ios="ios-recording" md="md-recording"></ion-icon>
+            </span>
+        </div>
+    </div>
     <div class="comments">
         <h2 class="sec-title">{{news.comments.length}} Comments</h2>
         <div class='add-comment' *ngIf = 'current_user'>

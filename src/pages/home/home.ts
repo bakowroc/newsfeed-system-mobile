@@ -17,6 +17,7 @@ import { NewsPage } from '../newspage/newspage';
 export class HomePage implements OnInit {
 
     news: any;
+    saved_news: any;
     current_user: Object;
 
     constructor(
@@ -33,6 +34,7 @@ export class HomePage implements OnInit {
 
     this.getLoggedUser()
         .subscribe((response)=>this.current_user = response);
+
 
   }
 
@@ -75,5 +77,6 @@ export class HomePage implements OnInit {
       return input.reverse();
 
   }
+
 
 }

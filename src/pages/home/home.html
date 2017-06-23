@@ -1,4 +1,24 @@
 <navigate [current_user] = 'current_user'></navigate>
+
+<span *ngIf = '!news'>You are offline</span>
+
+<section *ngIf = 'saved_news'>
+
+    <span class="home-sec-header">SAVED</span>
+    <div class="news-box" *ngFor="let item of saved_news">
+        <h1 class="title">{{item.title}}</h1>
+        <span class="tag">{{item.tag.name}}</span>
+        <span class="date">{{item.date | date : 'shortDate'}}</span>
+        <article class="content">
+            {{item.desc}}
+        </article>
+        <a class="button-link" (click) = "navigateToDetail(item.id)">Read more</a>
+    </div>
+
+</section>
+
+
+<span class="home-sec-header">NEWS</span>
 <div class="news-box" *ngFor="let item of news">
     <h1 class="title">{{item.title}}</h1>
     <span class="tag">{{item.tag.name}}</span>

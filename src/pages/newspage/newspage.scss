@@ -1,6 +1,6 @@
 news-page {
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 80px;
     overflow-y: auto;
     .news-box{
         width: 100%;
@@ -15,12 +15,12 @@ news-page {
             font-weight: 600;
             color: #222;
             width: 100%;
-            font-size: 36px;
+            font-size: 44px;
             float: left;
         }
         .tag, .date{
             margin-top: 10px;
-            font-size: 13px;
+            font-size: 18px;
             font-weight: 600;
             float: left;
             width: auto;
@@ -36,6 +36,7 @@ news-page {
             color: black;
             font-weight: 300;
             color: #5EAFF2;
+            font-size: 18px;
         }
         .content{
             color: #888;
@@ -43,6 +44,7 @@ news-page {
             float: left;
             text-align: justify;
             margin: 20px 0;
+            font-size: 18px;
         }
         .button-link{
             width: 100%;
@@ -55,6 +57,23 @@ news-page {
             border-radius: 2px;
             display: block;
         }
+        .save-offline{
+            float: left;
+            width: 100%;
+            padding: 20px 10px;
+            span{
+                font-size: 24px;
+                color: #fff;
+                padding-top: 5px;
+                width: 40px;
+                height: 40px;
+                background: #5EAFF2;
+                border-radius: 100%;
+                text-align: center;
+                float: right;
+
+            }
+        }
         .comments{
             .add-comment{
                 float: left;
@@ -66,7 +85,8 @@ news-page {
                     float: left;
                     padding: 10px;
                     border-color: #f9f9f9;
-                    border-radius: wpx;
+                    border-radius: 2px;
+                    font-size: 18px;
                 }
 
                 input{
@@ -79,13 +99,14 @@ news-page {
                     font-weight: 500;
                     padding: 5px;
                     border: 0;
+                    font-size: 18px;
                 }
             }
             float: left;
             width: 100%;
             .sec-title{
                 margin: 0;
-                font-size: 24px;
+                font-size: 32px;
                 font-weight: 600;
                 margin-bottom: 20px;
             }
@@ -94,7 +115,7 @@ news-page {
                 width: 100%;
                 .author, .date{
                     float: left;
-                    font-size: 11px;
+                    font-size: 14px;
                     color: #888;
                     font-weight: 300;
                     margin: 0;
@@ -112,8 +133,9 @@ news-page {
                     float: left;
                     background: #f9f9f9;
                     margin-top: 10px;
-                    padding: 5px;
+                    padding: 10px;
                     box-sizing: border-box;
+                    text-align: left;
                 }
             }
         }

@@ -8,7 +8,7 @@
     <nav class="navigate-toggle-body" [ngClass]= '!navigateToggle ? "active" : "not-active"'>
         <ul class="usercp-section">
             <li class="button-nav" (click) = 'navigateTo("login")' *ngIf = '!current_user'>Sign in</li>
-            <li class="button-nav" (click) = 'navigateTo("register")' *ngIf = '!current_user'>Register</li>
+            <li class="button-nav no-body" (click) = 'navigateTo("register")' *ngIf = '!current_user'>Register</li>
             <li class="username" *ngIf = 'current_user'>
                 {{current_user.username}}
             </li>

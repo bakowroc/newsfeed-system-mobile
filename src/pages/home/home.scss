@@ -1,8 +1,17 @@
 page-home {
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 80px;
     overflow-y: auto;
     background: #f9f9f9;
+    .home-sec-header{
+        font-weight: 600;
+        font-size: 20px;
+        margin: 15px 0;
+        float: left;
+        width: 100%;
+        text-align: left;
+        color: #ddd;
+    }
     .news-box{
         width: 100%;
         float: left;
@@ -18,12 +27,12 @@ page-home {
             font-weight: 600;
             color: #222;
             width: 100%;
-            font-size: 20px;
+            font-size: 24px;
             float: left;
         }
         .tag, .date{
             margin-top: 10px;
-            font-size: 13px;
+            font-size: 16px;
             font-weight: 600;
             float: left;
             width: auto;
@@ -40,6 +49,7 @@ page-home {
             max-height: 100px;
             overflow: hidden;
             margin: 20px 0;
+            font-size: 16px;
         }
         .button-link{
             width: 100%;
@@ -47,6 +57,7 @@ page-home {
             text-align: center;
             color: lighten(red, 15%);
             font-weight: 500;
+            font-size: 18px;
             background: transparent;
             padding: 10px;
             box-sizing: border-box;

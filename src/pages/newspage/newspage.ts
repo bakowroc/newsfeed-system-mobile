@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Http, Response, Headers } from '@angular/http'
 import { Storage } from '@ionic/storage';
-
+import { File } from '@ionic-native/file';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/mergeMap';
@@ -22,7 +22,8 @@ export class NewsPage implements OnInit {
       private http: Http,
       public navCtrl: NavController,
       public navParams: NavParams,
-      public storage: Storage
+      public storage: Storage,
+      private file: File
         ) {
 
             this.comment_body = {
@@ -40,6 +41,12 @@ export class NewsPage implements OnInit {
 
     this.getLoggedUser()
         .subscribe((response)=>this.current_user = response);
+
+  }
+
+  saveForOffline(article: Object){
+
+     let appDir = this.file.applicationStorageDirectory();
 
   }
 

@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
 
 import { HttpModule, JsonpModule } from '@angular/http';
+import { File } from '@ionic-native/file';
 
 import { RegisterPage } from '../pages/register/register';
 import { Newsmeal } from './app.component';
@@ -18,7 +19,7 @@ import { Navigate } from '../pages/home/navigate/navigate';
 @NgModule({
   declarations: [
     Newsmeal,
-    HomePage, 
+    HomePage,
     NewsPage,
     LoginPage,
     RegisterPage,
@@ -42,7 +43,8 @@ import { Navigate } from '../pages/home/navigate/navigate';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    File
   ]
 })
 export class AppModule {}
